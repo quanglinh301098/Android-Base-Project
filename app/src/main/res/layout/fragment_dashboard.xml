@@ -15,23 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/tabLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:background="@drawable/bg_app" />
-        <Button
-            android:id="@+id/oke"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ok"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="8dp"
             android:background="@color/colorBgBottomBar"
             android:gravity="center"
             android:orientation="horizontal"
+            android:paddingVertical="8dp"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <LinearLayout

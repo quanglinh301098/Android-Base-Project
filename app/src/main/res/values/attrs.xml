@@ -4,10 +4,19 @@
         <attr name="title" format="string"/>
         <attr name="subTitle" format="string"/>
     </declare-styleable>
-    <declare-styleable name="GoodNightButton">
+
+    <declare-styleable name="BaseProjectButton">
         <attr name="android:title" />
         <attr name="android:icon" />
         <attr name="android:textColor"/>
         <attr name="backgroundColor"/>
     </declare-styleable>
+
+    <declare-styleable name="ItemSettingDisplay">
+        <attr name="display_title" format="string" />
+        <attr name="display_setting_text" format="string" />
+        <attr name="display_setting_icon" format="reference" />
+        <attr name="display_divider" format="boolean" />
+    </declare-styleable>
+
 </resources>

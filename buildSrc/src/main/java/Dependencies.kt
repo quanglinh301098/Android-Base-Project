@@ -60,8 +60,7 @@ object AppDependencies {
   private const val extJUnit = "androidx.test.ext:junit:1.1.3"
   private const val espressoCore = "androidx.test.espresso:espresso-core:3.4.0"
   private const val adsIdentifier = "androidx.ads:ads-identifier:1.0.0-alpha04"
-  // Health Connect
-  private const val healthConnect = "androidx.health.connect:connect-client:1.0.0-alpha06"
+
   // eventBus
   private const val eventBus = "org.greenrobot:eventbus:3.3.1"
 
@@ -99,7 +98,6 @@ object AppDependencies {
     add(rxPermissions)
     add(materialDesign)
     add(adsIdentifier)
-    add(healthConnect)
     add(eventBus)
   }
 

@@ -2,115 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:orientation="vertical">
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:src="@mipmap/img_top_start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/default_padding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <View
+        <com.linhpham.baseproject.ui.custom.BaseProjectButton
+            android:id="@+id/btnLoginGoogle"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@color/colorBackground"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/viewTmp" />
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_google"
+            android:textColor="@color/black"
+            android:title="@string/login_with_google"
+            app:backgroundColor="@color/white" />
 
-        <View
+        <com.linhpham.baseproject.ui.custom.BaseProjectButton
+            android:id="@+id/btnLoginFacebook"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/bg_header_start"
-            app:layout_constraintBottom_toBottomOf="@+id/headerContainer" />
-
-        <View
-            android:id="@+id/viewTmp"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="@+id/headerContainer" />
-
-        <LinearLayout
-            android:id="@+id/headerContainer"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            app:layout_constraintHeight_percent="0.67"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/AppTheme.Text.H2.White"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/padding_big"
-                    android:text="@string/app_name"
-                    android:textAllCaps="true"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    style="@style/AppTheme.Text.Body.White"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/padding_big"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="@dimen/padding_big"
-                    android:gravity="center"
-                    android:text="@string/title_start" />
-
-            </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="27dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerContainer">
-
-            <com.linhpham.goodnight.ui.custom.GoodNightButton
-                android:id="@+id/btnLoginGoogle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:icon="@mipmap/ic_google"
-                android:textColor="@color/black"
-                android:title="@string/login_with_google"
-                app:backgroundColor="@color/white" />
-
-            <com.linhpham.goodnight.ui.custom.GoodNightButton
-                android:id="@+id/btnLoginFacebook"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding_thin"
-                android:icon="@mipmap/ic_facebook"
-                android:textColor="@color/black"
-                android:title="@string/login_with_facebook"
-                app:backgroundColor="@color/white" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_thin"
+            android:icon="@mipmap/ic_facebook"
+            android:textColor="@color/black"
+            android:title="@string/login_with_facebook"
+            app:backgroundColor="@color/white" />
 
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

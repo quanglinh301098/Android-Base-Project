@@ -8,7 +8,7 @@ object AppConfig {
     
     const val versionName = "1.0.0"
     const val buildToolsVersion = "31.0.0"
-    const val appId = "com.linhpham.goodnight"
+    const val appId = "com.linhpham.baseproject"
     const val multiDexEnabled: Boolean = true
 
 

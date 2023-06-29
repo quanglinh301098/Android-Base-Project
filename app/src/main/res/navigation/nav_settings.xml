@@ -6,7 +6,7 @@
     app:startDestination="@+id/fragmentSettings">
     <fragment
         android:id="@+id/fragmentSettings"
-        android:name="com.linhpham.goodnight.ui.dashboard.settings.SettingsFragment"
+        android:name="com.linhpham.baseproject.ui.settings.SettingsFragment"
         tools:layout="@layout/fragment_settings">
     </fragment>
 

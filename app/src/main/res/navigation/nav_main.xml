@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentDashBoard"
-        android:name="com.linhpham.goodnight.ui.dashboard.DashBoardFragment"
+        android:name="com.linhpham.baseproject.ui.dashboard.DashBoardFragment"
         tools:layout="@layout/fragment_dashboard">
 
         <action
@@ -18,28 +18,13 @@
             app:popEnterAnim="@anim/slide_in_from_left"
             app:popExitAnim="@anim/slide_out_to_right" />
 
-        <action
-            android:id="@+id/fragmentDashBoard_to_fragmentDetail"
-            app:destination="@id/fragmentDetail"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right" />
     </fragment>
 
     <fragment
         android:id="@+id/fragmentLogin"
-        android:name="com.linhpham.goodnight.ui.login.LoginFragment"
+        android:name="com.linhpham.baseproject.ui.login.LoginFragment"
         tools:layout="@layout/fragment_login">
     </fragment>
-
-
-    <fragment
-        android:id="@+id/fragmentDetail"
-        android:name="com.linhpham.goodnight.ui.dashboard.detail.DetailFragment"
-        tools:layout="@layout/fragment_detail">
-    </fragment>
-
 
 
 </navigation>

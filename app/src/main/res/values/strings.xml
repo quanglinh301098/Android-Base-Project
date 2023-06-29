@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Good Night</string>
+    <string name="app_name">Base Project</string>
     <string name="add_contact">Add Contact</string>
     <string name="name">Name</string>
     <string name="phone_number">Phone number</string>
@@ -33,6 +33,13 @@
     <string name="pls_instal_health_connect">Hãy cài đặt Health Connect trước</string>
     <string name="permistion_succesful">Đã cấp quyền thành công</string>
     <string name="permistion_aded">đã có quyền</string>
+
+    <string name="start_screen">Màn hình khởi động</string>
+    <string name="change_icon_app">Đổi icon ứng dụng</string>
+    <string name="dark_mode">Chế độ nền tối</string>
+    <string name="overview">Tổng quan</string>
+
+
 
     <plurals name="seconds_ago">
         <item quantity="one">%1$d second ago</item>
