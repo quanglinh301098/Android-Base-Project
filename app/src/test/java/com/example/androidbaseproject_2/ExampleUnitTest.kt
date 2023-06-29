@@ -1,4 +1,4 @@
-package com.example.androidbaseproject
+package com.example.androidbaseproject_2
 
 import org.junit.Test
 
