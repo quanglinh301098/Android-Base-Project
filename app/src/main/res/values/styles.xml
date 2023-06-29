@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+        <item name="android:timePickerStyle" tools:targetApi="lollipop">@style/MyTimePickerTheme
+        </item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+        <item name="colorControlNormal">@color/colorTextSecondary</item>
+        <item name="colorControlActivated">@color/colorTextSecondary</item>
+        <item name="colorControlHighlight">@color/colorTextSecondary</item>
+        <!--        <item name="fontFamily">@font/bw_quinta_pro_regular</item>-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="TextInputLayoutNewPassword" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+        <item name="colorControlNormal">@color/colorTextSecondary</item>
+        <item name="colorControlActivated">@color/colorTextSecondary</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorControlHighlight">@color/colorTextSecondary</item>
+        <!--        <item name="fontFamily">@font/bw_quinta_pro_medium</item>-->
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.HomeTab">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="AppTheme.HomeTabTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyTimePickerTheme" parent="android:Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+    <style name="AppTheme.Text">
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="AppTheme.Text.H2">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+    <style name="AppTheme.Text.H2.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Text.C1">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/text_size_c1</item>
+    </style>
+
+    <style name="AppTheme.Text.C2">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/text_size_c2</item>
+    </style>
+    <style name="AppTheme.Text.C2.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Text.C3">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/text_size_c3</item>
+    </style>
+
+    <style name="AppTheme.Text.Body">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+
+
+    <style name="AppTheme.Text.Body.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="backgroundColor">@color/colorButton</item>
+    </style>
+</resources>
